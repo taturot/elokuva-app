@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/List"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Small"
+        android:layout_width="237dp"
+        android:layout_height="43dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        android:text="Arvostelut"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:icon="@android:drawable/ic_menu_sort_by_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.84"
+        app:strokeColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/reviewView"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Small"
+        android:layout_width="237dp"
+        android:layout_height="43dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        android:text="Lisää arvostelu"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:icon="@android:drawable/ic_input_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.178"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.731"
+        app:strokeColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/Close"
+        style="@android:style/Widget.Material.Light.Button.Borderless.Small"
+        android:layout_width="102dp"
+        android:layout_height="41dp"
+        android:background="@color/black"
+        android:backgroundTint="@color/black"
+        android:text="Sulje"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        app:icon="@android:drawable/ic_notification_clear_all"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.95"
+        app:strokeColor="@android:color/background_light" />
+
+    <Spinner
+        android:id="@+id/EventSpinner"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
